@@ -4,7 +4,7 @@
   "description": "API for face recognition program",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "author": "Greg Phillips",
   "license": "ISC",
