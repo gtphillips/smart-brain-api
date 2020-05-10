@@ -21,9 +21,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.get('/', (req, res) => {
-	res.send('Server running as intended.');
-});
+app.get('/', (req, res) => res.send('Server running as intended.'));
 
 //alternate handling of same call giving dependancies first, then req,res on call
 app.post('/signin', signin.handleSignin(db, bcrypt));
