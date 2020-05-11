@@ -25,9 +25,9 @@ const handleRegister = (req, res, db, bcrypt) => {
       })
       .then(trx.commit)
       .catch((err) => {
-        res.status(400).json('Rollback was called.')  
         console.log(err);
         trx.rollback;
+        res.status(400).json('Rollback was called.')  
     })
     .catch(err => res.status(400).json('unable to register'))
 }
