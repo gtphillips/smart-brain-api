@@ -13,8 +13,7 @@ const db = knex({
 	connection: {
 		connectionString: process.env.DATABASE_URL,
   	ssl: true,
-	},
-	log: { error(message){}, warn(message){}, debug(message){} }
+	}
 });
 
 const app = express();
